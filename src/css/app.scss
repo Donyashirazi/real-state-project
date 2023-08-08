@@ -1,0 +1,63 @@
+/* Your app custom styles here */
+.test {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+.like-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	color: red;
+}
+.icon-color {
+	&:active {
+		color: rgb(162, 162, 9);
+	}
+}
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(1, 9, 7);
+	padding-top: 0;
+	z-index: 0;
+}
+.container2 {
+	position: relative;
+}
+
+.page-content {
+	--f7-page-toolbar-top-offset: 0px;
+	// padding-top: 3%;
+	// background-color: red;
+}
+.search-box {
+	background-color: blue;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.card-container {
+	background-color: rgb(9, 56, 56);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding-top: 0;
+}
+.page-content2 {
+	padding-top: 0;
+	background-color: black;
+}
+.test {
+	background-color: green;
+}

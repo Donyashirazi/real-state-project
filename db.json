@@ -1,0 +1,68 @@
+{
+	"properties": [
+		{
+			"id": 1,
+			"title": "Luxury Villa 1",
+			"price": "1 $1,500,000",
+			"location": "1 Los Angeles, CA",
+			"description": " 1 Stunning luxury villa with breathtaking views.",
+			"images": [
+				"https://cdn.framework7.io/placeholder/nature-1000x600-6.jpg"
+			],
+			"amenities": ["Swimming Pool", "Garden", "Gym"],
+			"agent": {
+				" name": "1 John Doe",
+				"email": "johndoe@example.com",
+				"phone": "+1 123-456-7890"
+			}
+		},
+		{
+			"id": 2,
+			"title": "Luxury Villa  2",
+			"price": "2 $1,500,000",
+			"location": "2 Los Angeles, CA",
+			"description": "2 Stunning luxury villa with breathtaking views.",
+			"images": [
+				"https://cdn.framework7.io/placeholder/nature-1000x600-2.jpg"
+			],
+			"amenities": ["Swimming Pool", "Garden", "Gym"],
+			"agent": {
+				" name": "2 John Doe",
+				"email": "johndoe@example.com",
+				"phone": "+1 123-456-7890"
+			}
+		},
+		{
+			"id": 3,
+			"title": "Luxury Villa 3",
+			"price": "3 $1,500,000",
+			"location": "3 Los Angeles, CA",
+			"description": "3 Stunning luxury villa with breathtaking views.",
+			"images": [
+				"https://cdn.framework7.io/placeholder/nature-1000x600-5.jpg"
+			],
+			"amenities": ["Swimming Pool", "Garden", "Gym"],
+			"agent": {
+				" name": "3 John Doe",
+				"email": "johndoe@example.com",
+				"phone": "+1 123-456-7890"
+			}
+		},
+		{
+			"id": 4,
+			"title": "Luxury Villa 3",
+			"price": "3 $1,500,000",
+			"location": "3 Los Angeles, CA",
+			"description": "3 Stunning luxury villa with breathtaking views.",
+			"images": [
+				"https://cdn.framework7.io/placeholder/nature-1000x600-5.jpg"
+			],
+			"amenities": ["Swimming Pool", "Garden", "Gym"],
+			"agent": {
+				" name": "3 John Doe",
+				"email": "johndoe@example.com",
+				"phone": "+1 123-456-7890"
+			}
+		}
+	]
+}
