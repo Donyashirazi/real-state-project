@@ -13,8 +13,6 @@ const HouseCard = ({ data }) => {
 	const addFavorite = useFavoriteStore((state) => state.addFavorite);
 	const removeFavorite = useFavoriteStore((state) => state.removeFavorite);
 
-	console.log('favorites', favorites);
-
 	return (
 		<Card
 			className="demo-card-header-pic"

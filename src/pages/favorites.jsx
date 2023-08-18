@@ -11,20 +11,12 @@ import { all } from 'axios';
 const FavoritesPage = () => {
 	const { data: containerData } = useAllData();
 	const favorites = useFavoriteStore((state) => state.favorites);
-	console.log('containerdata', containerData);
-	const allId = containerData.map((eachcard) => eachcard.id);
-	console.log('allid', allId);
 	const favorit = favorites.map((eachid) => eachid);
 	// const test = containerData?.map((eachCard) =>
 	// 	eachCard.id(test) ? console.log('working') : ''
 	// );
-	console.log('allids', allId);
-	console.log('favorites', favorites);
-	console.log(favorites.includes(allId));
-	console.log('containerdata', containerData);
 
 	const resource = favorites.map((key) => containerData[key]);
-	console.log('resource', resource);
 
 	const now = containerData
 		.filter((eachCard) => eachCard.id === favorites)

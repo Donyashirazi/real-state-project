@@ -1,17 +1,14 @@
-
-import React from 'react'
-import HouseCard from './card'
+import React from 'react';
+import HouseCard from './card';
 
 const Favorites = () => {
-    const favorites = useStore((state) => state.favorites);
-    console.log('test time', favorites);
+	const favorites = useStore((state) => state.favorites);
 
-  return (
-    <div>
-      <HouseCard />
-      
-    </div>
-  )
-}
+	return (
+		<div>
+			<HouseCard />
+		</div>
+	);
+};
 
-export default Favorites
+export default Favorites;

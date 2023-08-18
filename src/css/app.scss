@@ -1,4 +1,6 @@
 /* Your app custom styles here */
+:root {
+}
 .test {
 	display: flex;
 	flex-direction: row;
@@ -36,28 +38,10 @@
 	position: relative;
 }
 
-.page-content {
-	--f7-page-toolbar-top-offset: 0px;
-	// padding-top: 3%;
-	// background-color: red;
-}
-.search-box {
-	background-color: blue;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-}
 .card-container {
-	background-color: rgb(9, 56, 56);
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	padding-top: 0;
-}
-.page-content2 {
-	padding-top: 0;
-	background-color: black;
-}
-.test {
-	background-color: green;
+	--f7-page-searchbar-offset: 0px;
+	--f7-page-navbar-offset: 0px;
 }

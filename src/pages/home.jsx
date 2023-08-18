@@ -29,6 +29,8 @@ import Panel from '../components/panel';
 import Panels from '../components/panel';
 
 const HomePage = () => {
+	const [inputText, setInputText] = useState('');
+
 	const onSuccess = (data) => {
 		console.log('perform after fetching', data);
 	};
@@ -49,10 +51,10 @@ const HomePage = () => {
 
 			<Page
 				name="/home/"
-				className="seatch-box"
+				className="search-box"
 			>
-				<SeachBox />
-				<Container />
+				<SeachBox setInputText={setInputText} />
+				<Container inputText={inputText} />
 			</Page>
 		</View>
 	);
