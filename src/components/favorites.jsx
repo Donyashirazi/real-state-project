@@ -1,14 +1,15 @@
 import React from 'react';
 import HouseCard from './card';
 
-const Favorites = () => {
-	const favorites = useStore((state) => state.favorites);
+// const Favorites = () => {
+// 	const favorites = useStore((state) => state.favorites);
 
-	return (
-		<div>
-			<HouseCard />
-		</div>
-	);
-};
+// 	return (
+// 		<div>
+// 			<HouseCard />
 
-export default Favorites;
+// 		</div>
+// 	);
+// };
+
+// export default Favorites;

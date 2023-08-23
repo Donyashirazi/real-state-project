@@ -11,18 +11,6 @@ import { all } from 'axios';
 const FavoritesPage = () => {
 	const { data: containerData } = useAllData();
 	const favorites = useFavoriteStore((state) => state.favorites);
-	const favorit = favorites.map((eachid) => eachid);
-	// const test = containerData?.map((eachCard) =>
-	// 	eachCard.id(test) ? console.log('working') : ''
-	// );
-
-	const resource = favorites.map((key) => containerData[key]);
-
-	const now = containerData
-		.filter((eachCard) => eachCard.id === favorites)
-		?.map((fav, i) => console.log('fav', fav));
-
-	console.log('now', now);
 
 	const favorited = containerData.filter((eachCard) =>
 		favorites.includes(eachCard.id)

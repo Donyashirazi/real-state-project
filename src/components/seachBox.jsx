@@ -28,6 +28,7 @@ const SeachBox = (props) => {
 				searchContainer=".search-list"
 				searchIn=".item-title"
 				onChange={(e) => setInputText(e.target.value)}
+				placeholder="location"
 			/>
 		</>
 	);

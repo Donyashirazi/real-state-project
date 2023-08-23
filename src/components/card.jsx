@@ -5,13 +5,25 @@ import {
 	CardHeader,
 	Link,
 } from 'framework7-react';
-import React from 'react';
+import React, { useState } from 'react';
 import { useFavoriteStore } from './store';
 
 const HouseCard = ({ data }) => {
 	const favorites = useFavoriteStore((state) => state.favorites);
 	const addFavorite = useFavoriteStore((state) => state.addFavorite);
 	const removeFavorite = useFavoriteStore((state) => state.removeFavorite);
+
+	const [isChosen, setIsChosen] = useState(false);
+
+	const toggleInClick = () => {
+		if (!isChosen) {
+			addFavorite(data.id);
+			setIsChosen(true);
+		} else {
+			removeFavorite(data.id);
+			setIsChosen(false);
+		}
+	};
 
 	return (
 		<Card
@@ -37,22 +49,20 @@ const HouseCard = ({ data }) => {
 				<div className="like-section">
 					<Link
 						onClick={() => {
-							addFavorite(data.id);
+							toggleInClick();
 						}}
 					>
-						<i className="f7-icons size-14 icon-color">
+						<i
+							className={`f7-icons size-14 ${
+								isChosen && 'icon-color'
+							}`}
+						>
 							heart_fill
 						</i>
 					</Link>
 				</div>
 
-				<Link
-					onClick={() => {
-						removeFavorite(data.id);
-					}}
-				>
-					Read more
-				</Link>
+				<Link onClick={() => {}}>Read more</Link>
 			</CardFooter>
 		</Card>
 	);
