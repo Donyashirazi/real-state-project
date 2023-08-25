@@ -12,8 +12,9 @@ const HouseCard = ({ data }) => {
 	const favorites = useFavoriteStore((state) => state.favorites);
 	const addFavorite = useFavoriteStore((state) => state.addFavorite);
 	const removeFavorite = useFavoriteStore((state) => state.removeFavorite);
-
-	const [isChosen, setIsChosen] = useState(false);
+	const [isChosen, setIsChosen] = useState(
+		favorites.some((f) => f === data.id)
+	);
 
 	const toggleInClick = () => {
 		if (!isChosen) {
